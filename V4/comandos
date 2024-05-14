@@ -1,0 +1,21 @@
+conda create --name nome_env
+
+source activate nome_env
+
+conda install pip
+
+pip install -r requirements.txt
+
+python manage.py collectstatic
+
+.\venv\Scripts\activate
+
+python manage.py runserver
+
+Obs: CTRL + C for breaking
+
+Acessar Index: http://127.0.0.1:8000/index
+
+python manage.py makemigrations; python manage.py migrate; python manage.py collectstatic; python manage.py runserver;
+
+
